@@ -1,0 +1,39 @@
+import Link from 'next/link';
+import { GraduationCap } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+
+export function Footer() {
+  return (
+    <footer id="contact" className="w-full bg-primary/5 py-12 md:py-16">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid gap-10 lg:grid-cols-2">
+            <div className="space-y-4">
+                <Link href="#" className="flex items-center gap-2" prefetch={false}>
+                    <GraduationCap className="h-6 w-6 text-primary" />
+                    <span className="font-headline text-lg font-semibold text-primary">Prerna Bansal & Co</span>
+                </Link>
+                <p className="max-w-md text-foreground/80">
+                    Your trusted partner in navigating the path to higher education. Let's build your future, together.
+                </p>
+            </div>
+            <div className="space-y-4">
+                <h3 className="font-headline text-xl font-bold text-primary">Get Started Today</h3>
+                <p className="text-foreground/80">
+                    Ready to take the next step? Send us a message to schedule your initial consultation.
+                </p>
+                <form className="flex space-x-2">
+                    <Input type="email" placeholder="Enter your email" className="max-w-lg flex-1 bg-background" />
+                    <Button type="submit" className="bg-primary hover:bg-primary/90">
+                        Send
+                    </Button>
+                </form>
+            </div>
+        </div>
+        <div className="mt-8 border-t border-primary/20 pt-8 text-center text-sm text-foreground/60">
+            © {new Date().getFullYear()} Prerna Bansal & Co. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  );
+}
