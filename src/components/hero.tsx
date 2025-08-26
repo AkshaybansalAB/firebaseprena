@@ -31,7 +31,7 @@ export function Hero() {
             height={600}
             alt="Prerna Bansal"
             data-ai-hint="professional woman portrait"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
           />
         </div>
       </div>
