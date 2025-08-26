@@ -22,13 +22,13 @@ export function Header() {
           <Link href="#faq" className="text-foreground/80 transition-colors hover:text-foreground" prefetch={false}>
             FAQ
           </Link>
-          <Link href="#contact" className="text-foreground/80 transition-colors hover:text-foreground" prefetch={false}>
+          <Link href="#contact-us" className="text-foreground/80 transition-colors hover:text-foreground" prefetch={false}>
             Contact
           </Link>
         </nav>
         <div className='flex items-center gap-4'>
             <Button asChild className="hidden sm:flex bg-primary hover:bg-primary/90">
-              <Link href="#contact">Get Started</Link>
+              <Link href="#contact-us">Get Started</Link>
             </Button>
             <Sheet>
                 <SheetTrigger asChild>
@@ -42,9 +42,9 @@ export function Header() {
                         <Link href="#services" className="text-foreground/80 hover:text-foreground" prefetch={false}>Services</Link>
                         <Link href="#results" className="text-foreground/80 hover:text-foreground" prefetch={false}>Results</Link>
                         <Link href="#faq" className="text-foreground/80 hover:text-foreground" prefetch={false}>FAQ</Link>
-                        <Link href="#contact" className="text-foreground/80 hover:text-foreground" prefetch={false}>Contact</Link>
+                        <Link href="#contact-us" className="text-foreground/80 hover:text-foreground" prefetch={false}>Contact</Link>
                         <Button asChild className="bg-primary hover:bg-primary/90">
-                            <Link href="#contact">Get Started</Link>
+                            <Link href="#contact-us">Get Started</Link>
                         </Button>
                     </nav>
                 </SheetContent>

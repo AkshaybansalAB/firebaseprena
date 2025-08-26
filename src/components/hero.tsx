@@ -21,7 +21,7 @@ export function Hero() {
                 <Link href="#services">Our Services</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:text-primary">
-                <Link href="#contact">Contact Us</Link>
+                <Link href="#contact-us">Contact Us</Link>
               </Button>
             </div>
           </div>
