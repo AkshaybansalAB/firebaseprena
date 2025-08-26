@@ -6,6 +6,7 @@ import { Results } from '@/components/results';
 import { Universities } from '@/components/universities';
 import { Faq } from '@/components/faq';
 import { Footer } from '@/components/footer';
+import { ContactForm } from '@/components/contact-form';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Benefits />
         <Results />
         <Universities />
+        <ContactForm />
         <Faq />
       </main>
       <Footer />
