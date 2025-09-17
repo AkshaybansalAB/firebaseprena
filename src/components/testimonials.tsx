@@ -28,7 +28,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-[#1b2d61] text-[#fefbf1]">
+    <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-[#27316c] text-[#fefbf1]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
