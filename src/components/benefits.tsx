@@ -1,11 +1,10 @@
-import { CircleCheck } from 'lucide-react';
-import Image from 'next/image';
-
 const benefits = [
     { title: "Personalized Strategy", description: "Crafting a unique path for each student." },
     { title: "Decade of Experience", description: "Leveraging 10+ years of admission insights." },
     { title: "Holistic Development", description: "Focusing on academic and personal growth." },
     { title: "Proven Track Record", description: "Success stories from students worldwide." },
+    { title: "Global Network", description: "Connections with universities and programs across the globe." },
+    { title: "Application Mastery", description: "Expert guidance on every aspect of your application." },
 ]
 
 export function Benefits() {
@@ -22,32 +21,20 @@ export function Benefits() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <div className="flex flex-col justify-center space-y-4">
-            <ul className="grid gap-6">
-              {benefits.map((benefit, index) => (
-                <li key={index}>
-                  <div className="grid gap-1">
-                    <div className="flex items-center gap-2">
-                      <CircleCheck className="h-5 w-5 text-white" />
-                      <h3 className="text-xl font-bold text-[#27316c]">
-                        {benefit.title}
-                      </h3>
+        <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:gap-12">
+            {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-6">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+                        <span className="text-2xl font-bold text-[#27316c]">{index + 1}</span>
                     </div>
-                    <p className="text-white/80">{benefit.description}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <Image
-            src="https://picsum.photos/550/310"
-            width="550"
-            height="310"
-            alt="Benefits"
-            data-ai-hint="students collaborating"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-          />
+                    <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-[#27316c]">
+                            {benefit.title}
+                        </h3>
+                        <p className="text-white/80">{benefit.description}</p>
+                    </div>
+                </div>
+            ))}
         </div>
       </div>
     </section>
