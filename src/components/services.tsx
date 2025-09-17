@@ -44,9 +44,9 @@ export function Services() {
             <Card key={index} className="bg-[#88c0ae] border-white/20 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
               <CardHeader className="flex flex-col items-center text-center gap-4">
                 {service.icon}
-                <CardTitle className="font-headline text-xl text-[#fefbf1]">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-xl text-[#1b2d61]">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-center text-[#1b2d61] flex-grow">
+              <CardContent className="text-center text-[#fefbf1] flex-grow">
                 {service.description}
               </CardContent>
             </Card>
