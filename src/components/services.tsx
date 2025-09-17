@@ -26,27 +26,27 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-[#008682] text-[#fefbf1]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Our Services</div>
-            <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary-foreground">Our Services</div>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
               How We Help You Succeed
             </h2>
-            <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-[#fefbf1]/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We offer a suite of services designed to provide holistic support throughout your journey to higher education.
             </p>
           </div>
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4 mt-12">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card/50 border-primary/10 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+            <Card key={index} className="bg-white/10 border-white/20 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
               <CardHeader className="flex flex-col items-center text-center gap-4">
                 {service.icon}
-                <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-xl text-white">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-center text-foreground/80 flex-grow">
+              <CardContent className="text-center text-[#fefbf1]/80 flex-grow">
                 {service.description}
               </CardContent>
             </Card>
