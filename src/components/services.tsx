@@ -41,12 +41,12 @@ export function Services() {
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4 mt-12">
           {services.map((service, index) => (
-            <Card key={index} className="bg-white/10 border-white/20 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+            <Card key={index} className="bg-[#88c0ae] border-white/20 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col text-primary">
               <CardHeader className="flex flex-col items-center text-center gap-4">
                 {service.icon}
-                <CardTitle className="font-headline text-xl text-white">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-xl text-primary">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-center text-[#fefbf1]/80 flex-grow">
+              <CardContent className="text-center text-primary/80 flex-grow">
                 {service.description}
               </CardContent>
             </Card>
