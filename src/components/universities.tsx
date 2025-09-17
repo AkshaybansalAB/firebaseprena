@@ -11,33 +11,59 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 
-const universityLogos = [
+const universityLogos1 = [
   "Harvard University", "Stanford University", "MIT", "University of Oxford", "University of Cambridge", "Caltech", "Princeton University", "Yale University", "Columbia University", "UChicago"
 ];
 
+const universityLogos2 = [
+  "UPenn", "Johns Hopkins", "Northwestern", "Duke University", "Cornell University", "UCLA", "UC Berkeley", "University of Michigan", "NYU", "Imperial College London"
+];
+
 export function Universities() {
-  const [api, setApi] = React.useState<CarouselApi>();
+  const [api1, setApi1] = React.useState<CarouselApi>();
+  const [api2, setApi2] = React.useState<CarouselApi>();
 
   React.useEffect(() => {
-    if (!api) {
+    if (!api1) {
       return;
     }
 
     const interval = setInterval(() => {
-      if (api.canScrollNext()) {
-        api.scrollNext();
+      if (api1.canScrollNext()) {
+        api1.scrollNext();
       } else {
-        api.scrollTo(0);
+        api1.scrollTo(0);
       }
     }, 3000);
 
     // Stop autoplay on interaction
-    api.on("pointerDown", () => {
+    api1.on("pointerDown", () => {
       clearInterval(interval);
     });
     
     return () => clearInterval(interval);
-  }, [api]);
+  }, [api1]);
+
+  React.useEffect(() => {
+    if (!api2) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+        if (api2.canScrollNext()) {
+          api2.scrollNext();
+        } else {
+          api2.scrollTo(0);
+        }
+      }, 3000);
+  
+      // Stop autoplay on interaction
+      api2.on("pointerDown", () => {
+        clearInterval(interval);
+      });
+      
+      return () => clearInterval(interval);
+  }, [api2]);
 
   return (
     <section id="universities" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
@@ -50,9 +76,9 @@ export function Universities() {
             Our students have been accepted into a wide range of top-tier universities across the globe.
           </p>
         </div>
-        <div className="py-12">
+        <div className="py-12 space-y-8">
           <Carousel
-            setApi={setApi}
+            setApi={setApi1}
             opts={{
               align: 'start',
               loop: true,
@@ -60,7 +86,32 @@ export function Universities() {
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent>
-              {universityLogos.map((name, index) => (
+              {universityLogos1.map((name, index) => (
+                <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
+                  <div className="p-1">
+                    <Card className="bg-background/80 border-primary/10 shadow-sm">
+                      <CardContent className="flex aspect-video items-center justify-center p-6">
+                        <span className="text-lg font-semibold text-primary/80 text-center">{name}</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="text-primary border-primary hover:bg-primary/10" />
+            <CarouselNext className="text-primary border-primary hover:bg-primary/10" />
+          </Carousel>
+          <Carousel
+            setApi={setApi2}
+            opts={{
+              align: 'start',
+              loop: true,
+              direction: 'right',
+            }}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent>
+              {universityLogos2.map((name, index) => (
                 <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                   <div className="p-1">
                     <Card className="bg-background/80 border-primary/10 shadow-sm">
