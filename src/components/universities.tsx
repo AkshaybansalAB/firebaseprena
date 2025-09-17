@@ -10,6 +10,8 @@ import {
 } from '@/components/ui/carousel';
 import { Button } from './ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay";
+
 
 const universityLogos1 = [
   "Harvard University", "Stanford University", "MIT", "University of Oxford", "University of Cambridge", "Caltech", "Princeton University", "Yale University", "Columbia University", "UChicago"
@@ -49,37 +51,13 @@ export function Universities() {
     api1.on("select", onSelect);
     api1.on("reInit", onSelect);
 
-
-    const interval1 = setInterval(() => {
-      if (api1.canScrollNext()) {
-        api1.scrollNext();
-      } else {
-        api1.scrollTo(0);
-      }
-    }, 3000);
-
-    const interval2 = setInterval(() => {
-        if (api2.canScrollNext()) {
-          api2.scrollNext();
-        } else {
-          api2.scrollTo(0);
-        }
-      }, 3000);
-
-    // Stop autoplay on interaction
-    const stopAutoplay = () => {
-        clearInterval(interval1);
-        clearInterval(interval2);
-    }
-    api1.on("pointerDown", stopAutoplay);
-    api2.on("pointerDown", stopAutoplay);
-    
     return () => {
-        clearInterval(interval1);
-        clearInterval(interval2);
+      if (api1) {
         api1.off("select", onSelect);
         api1.off("reInit", onSelect);
-    };
+      }
+    }
+
   }, [api1, api2]);
 
   return (
@@ -97,14 +75,15 @@ export function Universities() {
             <div className="py-12 space-y-8">
             <Carousel
                 setApi={setApi1}
+                plugins={[ Autoplay({ delay: 0, stopOnInteraction: true, playOnInit: true }) ]}
                 opts={{
-                align: 'start',
-                loop: true,
+                    align: 'start',
+                    loop: true,
                 }}
                 className="w-full"
             >
-                <CarouselContent>
-                {universityLogos1.map((name, index) => (
+                <CarouselContent className="animate-marquee">
+                {[...universityLogos1, ...universityLogos1].map((name, index) => (
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
@@ -119,15 +98,15 @@ export function Universities() {
             </Carousel>
             <Carousel
                 setApi={setApi2}
+                plugins={[ Autoplay({ delay: 0, stopOnInteraction: true, playOnInit: true, reverse: true }) ]}
                 opts={{
-                align: 'start',
-                loop: true,
-                direction: 'right',
+                    align: 'start',
+                    loop: true,
                 }}
                 className="w-full"
             >
-                <CarouselContent>
-                {universityLogos2.map((name, index) => (
+                <CarouselContent className="animate-marquee-reverse">
+                {[...universityLogos2, ...universityLogos2].map((name, index) => (
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
