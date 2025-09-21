@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+    <section id="home" className="relative w-full h-[80vh] md:h-screen flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
             <Image
                 src="https://picsum.photos/1200/800"
