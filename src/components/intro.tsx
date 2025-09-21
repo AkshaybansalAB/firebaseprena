@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function Intro() {
   return (
@@ -15,6 +17,11 @@ export function Intro() {
             <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Prerna's philosophy is rooted in the belief that every student's journey is unique. She is committed to providing holistic guidance that extends beyond applications, fostering personal growth and confidence that lasts a lifetime.
             </p>
+            <div className="mt-6">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    <Link href="#contact-us">Get in Touch NOW</Link>
+                </Button>
+            </div>
           </div>
           <div className="flex justify-center">
             <Image
