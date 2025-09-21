@@ -17,15 +17,15 @@ export function Footer() {
                     Your trusted partner in navigating the path to higher education. Let's build your future, together.
                 </p>
                 <div className="flex space-x-4 mt-4">
-                    <Link href="#" className="text-foreground/80 hover:text-primary" prefetch={false}>
+                    <Link href="https://www.instagram.com/prernabansalandco/" target="_blank" className="text-foreground/80 hover:text-primary" prefetch={false}>
                         <Instagram className="h-6 w-6" />
                         <span className="sr-only">Instagram</span>
                     </Link>
-                    <Link href="#" className="text-foreground/80 hover:text-primary" prefetch={false}>
+                    <Link href="https://www.youtube.com/@PrernaBansalandco" target="_blank" className="text-foreground/80 hover:text-primary" prefetch={false}>
                         <Youtube className="h-6 w-6" />
                         <span className="sr-only">YouTube</span>
                     </Link>
-                    <Link href="#" className="text-foreground/80 hover:text-primary" prefetch={false}>
+                    <Link href="https://www.linkedin.com/company/prerna-bansal-and-co-college-admissions/" target="_blank" className="text-foreground/80 hover:text-primary" prefetch={false}>
                         <Linkedin className="h-6 w-6" />
                         <span className="sr-only">LinkedIn</span>
                     </Link>
