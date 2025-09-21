@@ -4,15 +4,24 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section id="home" className="w-full pt-24 md:pt-32 lg:pt-40">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="flex flex-col justify-center space-y-4">
+    <section id="home" className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+        <div className="absolute inset-0 z-0">
+            <Image
+                src="https://picsum.photos/1200/800"
+                fill
+                alt="Background"
+                data-ai-hint="students celebrating graduation"
+                className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+        </div>
+      <div className="relative z-10 container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center space-y-4">
             <div className="space-y-4">
-              <h1 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl md:text-5xl xl:text-6xl/none">
+              <h1 className="font-headline text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl xl:text-6xl/none">
                 Unlock Your Academic Future with Expert Guidance
               </h1>
-              <p className="max-w-[600px] text-foreground/80 md:text-xl">
+              <p className="max-w-[600px] text-white/80 mx-auto md:text-xl">
                 Prerna Bansal, with over a decade of experience, is dedicated to helping students navigate the complexities of college admissions and achieve their dreams.
               </p>
             </div>
@@ -20,20 +29,11 @@ export function Hero() {
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Link href="#services">Our Services</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 hover:text-white">
                 <Link href="#contact-us">Contact Us</Link>
               </Button>
             </div>
           </div>
-          <Image
-            src="https://picsum.photos/600/600"
-            width={600}
-            height={600}
-            alt="Prerna Bansal"
-            data-ai-hint="professional woman portrait"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-          />
-        </div>
       </div>
     </section>
   );
