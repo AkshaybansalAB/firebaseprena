@@ -87,8 +87,8 @@ export function Universities() {
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
-                        <CardContent className="flex aspect-video items-center justify-center p-6">
-                            <span className="text-lg font-semibold text-primary/80 text-center">{name}</span>
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                            <span className="text-xl font-semibold text-primary/80 text-center">{name}</span>
                         </CardContent>
                         </Card>
                     </div>
@@ -110,8 +110,8 @@ export function Universities() {
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
-                        <CardContent className="flex aspect-video items-center justify-center p-6">
-                            <span className="text-lg font-semibold text-primary/80 text-center">{name}</span>
+                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                            <span className="text-xl font-semibold text-primary/80 text-center">{name}</span>
                         </CardContent>
                         </Card>
                     </div>
