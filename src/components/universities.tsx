@@ -10,8 +10,6 @@ import {
 } from '@/components/ui/carousel';
 import { Button } from './ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Autoplay from "embla-carousel-autoplay";
-
 
 const universityLogos1 = [
   "Harvard University", "Stanford University", "MIT", "University of Oxford", "University of Cambridge", "Caltech", "Princeton University", "Yale University", "Columbia University", "UChicago"
@@ -61,7 +59,7 @@ export function Universities() {
   }, [api1, api2]);
 
   return (
-    <section id="universities" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
+    <section id="universities" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
@@ -75,19 +73,18 @@ export function Universities() {
             <div className="py-12 space-y-8">
             <Carousel
                 setApi={setApi1}
-                plugins={[ Autoplay({ delay: 0, stopOnInteraction: true, playOnInit: true }) ]}
                 opts={{
                     align: 'start',
                     loop: true,
                 }}
                 className="w-full"
             >
-                <CarouselContent className="animate-marquee">
+                <CarouselContent className="animate-marquee flex">
                 {[...universityLogos1, ...universityLogos1].map((name, index) => (
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                        <CardContent className="flex aspect-video items-center justify-center p-6">
                             <span className="text-xl font-semibold text-primary/80 text-center">{name}</span>
                         </CardContent>
                         </Card>
@@ -98,19 +95,18 @@ export function Universities() {
             </Carousel>
             <Carousel
                 setApi={setApi2}
-                plugins={[ Autoplay({ delay: 0, stopOnInteraction: true, playOnInit: true, reverse: true }) ]}
                 opts={{
                     align: 'start',
                     loop: true,
                 }}
                 className="w-full"
             >
-                <CarouselContent className="animate-marquee-reverse">
+                <CarouselContent className="animate-marquee-reverse flex">
                 {[...universityLogos2, ...universityLogos2].map((name, index) => (
                     <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
                     <div className="p-1">
                         <Card className="bg-background/80 border-primary/10 shadow-sm">
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
+                        <CardContent className="flex aspect-video items-center justify-center p-6">
                             <span className="text-xl font-semibold text-primary/80 text-center">{name}</span>
                         </CardContent>
                         </Card>
