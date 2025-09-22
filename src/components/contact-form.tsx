@@ -48,7 +48,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact-us" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="contact-us" className="w-full py-8">
       <div className="container mx-auto px-4 md:px-6">
         <Card className="max-w-3xl mx-auto bg-card/50 border-primary/10">
             <CardHeader className='text-center'>

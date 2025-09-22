@@ -13,22 +13,54 @@ import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
-    quote: "Prerna Ma'am's guidance was invaluable. Her personalized approach helped me get into my dream university. I couldn't have done it without her expertise and constant support.",
-    name: "Aarav Sharma",
+    quote: "Working with Prerana has been an amazing experience, it was much more personal and in depth than I had anticipated. With Prerna, you have someone that is 100% genuine, reliable and focused on what’s best for you. She was able to guide me and give me the push I needed to get me motivated and on the right path. She’s very professional in her work ethic while also having a real personal touch that makes her stand out. I wholeheartedly vouch for her to be able to take anyone through their admissions journey.",
+    name: "AG, Harvard Ed. M, 2024",
   },
   {
-    quote: "The entire process of college applications felt overwhelming, but Prerna Bansal & Co made it manageable and even exciting. Their insights into what top universities look for are second to none.",
-    name: "Diya Mehta",
+    quote: "We had the privilege of working with Prerna during our daughter Anika’s college application journey, and we’re so grateful. She guided us through college and major selection, and essay writing - with both expertise and heart. What stood out was her deep understanding of our cultural background and Anika’s personality, which helped us find the right-fit colleges. Her warmth, energy, and care made a stressful process feel manageable. Anika received offers from top universities along with a $150,000 scholarship. We couldn’t have done it without her. Highly recommend her to anyone looking for a counsellor who truly cares.",
+    name: "HU, whose daughter received a full-ride scholarship to UT Dallas",
   },
   {
-    quote: "From building my profile to acing the interviews, the team was with me at every step. I'm incredibly grateful for their mentorship which went beyond just applications.",
-    name: "Rohan Kapoor",
+    quote: "Thank you so much, I got into my dream college NC State!",
+    name: "TR, Computer Science Major, NC State, Class of 2028",
+  },
+  {
+    quote: "Working with Prerna during my son Akash’s college application process was a wonderful experience. Her deep knowledge of colleges across the US, UK, and Canada helped us identify the right-fit options based on his strengths. She supported everything - from essays and profile building to competitive exams and internship planning. Prerna’s patience, clear communication, and organised approach made the process smooth and effective. She goes above and beyond, and I’d wholeheartedly recommend her to anyone looking for a supportive, experienced, and genuinely invested admissions counsellor.",
+    name: "KC, whose son got offers from IU Bloomington, ASU & Multiple UCs",
+  },
+  {
+    quote: "Prerna has mastered the art of helping one dig deeper and crafting stories that are authentic to oneself. Her calm, positive and reassuring ‘we’ve got this’ attitude is really what stood out to me the most and made the otherwise regarded as ‘stressful’ experience, an exciting one. I would strongly recommend her to anyone not only looking for an essay/CV review, but also to help you think from a different perspective and translate your essence onto paper with precision.",
+    name: "ID, Masters in Education, Columbia University",
+  },
+  {
+    quote: "I had a low CGPA which made my choices limited. Prerna was the one who guided me and suggested to me what kinds of Universities I can apply for. She helped me in every step of the way - from shortlisting universities to tailoring SOPs for each of them and then to finalising the right people for the recommendation. With her help I was able to get into Kingston University that comes in the top 40 universities in the UK. I am so glad that I had reached out to her for her help and guidance.",
+    name: "SS, Kingston University",
+  },
+  {
+    quote: "My application process was complicated due to COVID and a few personal hurdles, but Prerna made the entire journey feel manageable and even enjoyable. She helped transform my SOP into a genuine reflection of my story - not just a list of achievements. What I appreciated most was how approachable and encouraging she was, while still being detail-oriented and fully committed. She was happy to do as many revisions as needed to get things just right. I always felt supported, and truly enjoyed working with her every step of the way.",
+    name: "SM, King's University, M.Sc. Data Science",
+  },
+  {
+    quote: "I was extremely confused regarding my future and the subjects I wanted to pick when I consulted Prerna. She was very very comfortable to work with and extremely approachable, she curated a plan that was suitable for both of us. She asked me questions and gave me space to explore and research on my own while guiding me simultaneously. She gave me an insight into different subjects and finally helped me pick the right one. She was super friendly and calm throughout all our sessions, a perfect shoulder to fall upon!",
+    name: "DL",
+  },
+  {
+    quote: "You are so committed to your work... I'm really impressed with the way you work. All the best",
+    name: "Mother of SP, whose daughter received offers from OP Jindal & Edinburgh",
+  },
+  {
+    quote: "My experience with Prerna was filled with learning, reflection, and growth. Even though I was applying to niche, non-traditional master’s programs, she took the time to deeply understand the field - and made the process feel thoughtful and personalised. Her guidance was steady, her feedback honest, and her storytelling instincts spot on. I truly appreciated her patience, perspective, and ability to simplify a stressful process. Thanks to her creativity and insight, I cleared the first rounds at every college I applied to. It was a pleasure working with her!",
+    name: "SJ, received offers from CIIS, San Francisco & Royal Academy of Arts, London",
+  },
+  {
+    quote: "When we started working with Prerna, we knew very little about the US college application process. She quickly put us at ease, providing clarity and support at every step. Over six months, she guided us through essays, forms, and deadlines with dedication and quick turnarounds. Her detailed feedback - especially on the Common App and supplementary essays - made a huge difference. Amit’s final application was strong, clear, and timely, thanks to her help. It’s been a real pleasure working with her, and we’d gladly recommend her to any future college applicants.",
+    name: "Parents of AM, whose son is pursuing CS at UIUC",
   },
 ];
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-[#27316c] text-[#fefbf1]">
+    <section id="testimonials" className="w-full py-10 bg-[#27316c] text-[#fefbf1]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
