@@ -6,7 +6,7 @@ import { Menu } from 'lucide-react';
 
 export function Header() {
   return (
-    <header className="fixed top-4 left-4 right-4 z-50 bg-background/80 backdrop-blur-sm shadow-md rounded-xl ">
+    <header className="fixed top-3 left-4 right-4 z-50 bg-background/80 backdrop-blur-sm shadow-md rounded-xl ">
   <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
     <Link href="#" className="flex items-center gap-2" prefetch={false}>
       <GraduationCap className="h-6 w-6 text-primary" />
