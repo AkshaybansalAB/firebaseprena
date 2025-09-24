@@ -27,26 +27,26 @@ export function Benefits() {
         </div>
 
         <div className="mx-auto grid max-w-5xl gap-2 py-12 sm:grid-cols-1 md:grid-cols-2 lg:gap-6">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-start gap-6">
-              <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center rounded-full ">
-  <Image
-    src={`/work/${index + 1}.png`}
-    alt={`Benefit ${index + 1}`}
-    width={100}   // doubled
-    height={100}  // doubled
-    className=""
-  />
+  {benefits.map((benefit, index) => (
+    <div key={index} className="flex items-start gap-6">
+      <div className="flex h-32 w-32 flex-shrink-0">
+        <Image
+          src={`/work/${index + 1}.png`}
+          alt={`Benefit ${index + 1}`}
+          width={100}
+          height={100}
+        />
+      </div>
+      <div className="grid gap-1">
+        <h3 className="text-xl font-bold text-[#27316c]">
+          {benefit.title}
+        </h3>
+        <p className="text-white/80">{benefit.description}</p>
+      </div>
+    </div>
+  ))}
 </div>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-[#27316c]">
-                  {benefit.title}
-                </h3>
-                <p className="text-white/80">{benefit.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );

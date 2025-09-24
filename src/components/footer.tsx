@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { GraduationCap, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-
+import Image from 'next/image';
 export function Footer() {
   return (
     <footer id="contact" className="w-full bg-primary/5 py-12 md:py-16">
@@ -10,8 +10,14 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-4">
                 <Link href="#" className="flex items-center gap-2" prefetch={false}>
-                    <GraduationCap className="h-6 w-6 text-primary" />
-                    <span className="font-headline text-lg font-semibold text-primary">Prerna Bansal & Co</span>
+                   <div className="relative h-16 w-[400px] md:w-[200px]"> {/* keeps navbar height fixed, adjusts logo width */}
+                             <Image
+                               src="/logos FINAL-05.png"
+                               alt="Prerna Bansal & Co Logo"
+                               fill // makes Image fill the parent div
+                               className="object-contain"
+                             />
+                           </div>
                 </Link>
                 <p className="max-w-md text-foreground/80">
                     Your trusted partner in navigating the path to higher education. Let's build your future, together.

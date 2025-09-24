@@ -20,10 +20,10 @@ const testimonials = [
     quote: "We had the privilege of working with Prerna during our daughter Anika’s college application journey, and we’re so grateful. She guided us through college and major selection, and essay writing - with both expertise and heart. What stood out was her deep understanding of our cultural background and Anika’s personality, which helped us find the right-fit colleges. Her warmth, energy, and care made a stressful process feel manageable. Anika received offers from top universities along with a $150,000 scholarship. We couldn’t have done it without her. Highly recommend her to anyone looking for a counsellor who truly cares.",
     name: "HU, whose daughter received a full-ride scholarship to UT Dallas",
   },
-  {
-    quote: "Thank you so much, I got into my dream college NC State!",
-    name: "TR, Computer Science Major, NC State, Class of 2028",
-  },
+  // {
+  //   quote: "Thank you so much, I got into my dream college NC State!",
+  //   name: "TR, Computer Science Major, NC State, Class of 2028",
+  // },
   {
     quote: "Working with Prerna during my son Akash’s college application process was a wonderful experience. Her deep knowledge of colleges across the US, UK, and Canada helped us identify the right-fit options based on his strengths. She supported everything - from essays and profile building to competitive exams and internship planning. Prerna’s patience, clear communication, and organised approach made the process smooth and effective. She goes above and beyond, and I’d wholeheartedly recommend her to anyone looking for a supportive, experienced, and genuinely invested admissions counsellor.",
     name: "KC, whose son got offers from IU Bloomington, ASU & Multiple UCs",
@@ -44,10 +44,10 @@ const testimonials = [
     quote: "I was extremely confused regarding my future and the subjects I wanted to pick when I consulted Prerna. She was very very comfortable to work with and extremely approachable, she curated a plan that was suitable for both of us. She asked me questions and gave me space to explore and research on my own while guiding me simultaneously. She gave me an insight into different subjects and finally helped me pick the right one. She was super friendly and calm throughout all our sessions, a perfect shoulder to fall upon!",
     name: "DL",
   },
-  {
-    quote: "You are so committed to your work... I'm really impressed with the way you work. All the best",
-    name: "Mother of SP, whose daughter received offers from OP Jindal & Edinburgh",
-  },
+  // {
+  //   quote: "You are so committed to your work... I'm really impressed with the way you work. All the best",
+  //   name: "Mother of SP, whose daughter received offers from OP Jindal & Edinburgh",
+  // },
   {
     quote: "My experience with Prerna was filled with learning, reflection, and growth. Even though I was applying to niche, non-traditional master’s programs, she took the time to deeply understand the field - and made the process feel thoughtful and personalised. Her guidance was steady, her feedback honest, and her storytelling instincts spot on. I truly appreciated her patience, perspective, and ability to simplify a stressful process. Thanks to her creativity and insight, I cleared the first rounds at every college I applied to. It was a pleasure working with her!",
     name: "SJ, received offers from CIIS, San Francisco & Royal Academy of Arts, London",
