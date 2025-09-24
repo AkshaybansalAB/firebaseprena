@@ -3,15 +3,21 @@ import { Button } from '@/components/ui/button';
 import { GraduationCap } from 'lucide-react';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
-
+import Image from 'next/image';
 export function Header() {
   return (
     <header className="fixed top-3 left-4 right-4 z-50 bg-background/80 backdrop-blur-sm shadow-md rounded-xl ">
   <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-    <Link href="#" className="flex items-center gap-2" prefetch={false}>
-      <GraduationCap className="h-6 w-6 text-primary" />
-      <span className="font-headline text-lg font-semibold text-primary">Prerna Bansal & Co</span>
-    </Link>
+    <Link href="#" className="flex items-center" prefetch={false}>
+        <div className="relative h-16 w-[180px] md:w-[200px]"> {/* keeps navbar height fixed, adjusts logo width */}
+          <Image
+            src="/logos FINAL-05.png"
+            alt="Prerna Bansal & Co Logo"
+            fill // makes Image fill the parent div
+            className="object-contain"
+          />
+        </div>
+      </Link>
     <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
       <Link href="#services" className="text-foreground/80 transition-colors hover:text-foreground" prefetch={false}>
         Services

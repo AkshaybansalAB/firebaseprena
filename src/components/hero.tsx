@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section id="home" className="relative w-full h-[80vh] md:h-screen flex items-center justify-center text-center mt-20 ">
+    <section id="home" className="relative w-full h-[80vh] md:h-screen flex items-center justify-center text-center mt-10 ">
         <div className="absolute inset-0 z-0 flex justify-center ">
-  <div className="relative w-[95%] h-full rounded-xl overflow-hidden">
+  <div className="relative w-[95%] h-[95%] rounded-xl overflow-hidden">
   <Image
     src="/Hero Section Image.jpg"
     fill
