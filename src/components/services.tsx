@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const services = [
@@ -49,20 +48,17 @@ export function Services() {
         {/* Grid with 2 cards per row */}
         <div className="mx-auto grid items-start gap-10 sm:max-w-3xl sm:grid-cols-2 md:max-w-4xl lg:max-w-5xl mt-12">
           {services.map((service, index) => (
-          <Card
-  key={index}
-  className="bg-[#88c0ae] border border-white/40  hover:shadow-lg transition-shadow duration-300 flex flex-col items-center p-3 w-110  h-full  rounded-[4rem]"
->
-
-
+            <Card
+              key={index}
+              className="bg-[#88c0ae] border border-white/40 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center p-3 w-110 h-full rounded-[4rem]"
+            >
               <CardHeader className="flex flex-col items-center text-center gap-4">
                 {/* Top circle image */}
-                <div className="relative w-20 h-20 rounded-full overflow-hidden">
-                  <Image
+                <div className="w-20 h-20 rounded-full overflow-hidden relative">
+                  <img
                     src={service.image}
                     alt={service.title}
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 

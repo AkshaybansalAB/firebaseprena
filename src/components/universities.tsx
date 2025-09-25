@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import Image from 'next/image';
 
 const universityLogos = Array.from({ length: 20 }, (_, i) => `/College Logos/${i + 1}.avif`);
 const allLogos = [...universityLogos, ...universityLogos]; // Duplicate for seamless animation
@@ -29,14 +28,11 @@ export function Universities() {
                   className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
                              bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
                 >
-                  <div className="relative w-full h-full p-4 flex items-center justify-center">
-                    <Image
-                      src={src}
-                      alt={`University logo ${index + 1}`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                  <img
+                    src={src}
+                    alt={`University logo ${index + 1}`}
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
               ))}
             </div>
@@ -50,14 +46,11 @@ export function Universities() {
                   className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
                              bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
                 >
-                  <div className="relative w-full h-full p-4 flex items-center justify-center">
-                    <Image
-                      src={src}
-                      alt={`University logo ${index + 1}`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                  <img
+                    src={src}
+                    alt={`University logo ${index + 1}`}
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
               ))}
             </div>
@@ -72,14 +65,11 @@ export function Universities() {
                   className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
                              bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
                 >
-                  <div className="relative w-full h-full p-4 flex items-center justify-center">
-                    <Image
-                      src={src}
-                      alt={`University logo ${index + 1}`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                  <img
+                    src={src}
+                    alt={`University logo ${index + 1}`}
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
               ))}
             </div>
@@ -93,14 +83,11 @@ export function Universities() {
                   className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
                              bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
                 >
-                  <div className="relative w-full h-full p-4 flex items-center justify-center">
-                    <Image
-                      src={src}
-                      alt={`University logo ${index + 1}`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                  <img
+                    src={src}
+                    alt={`University logo ${index + 1}`}
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
               ))}
             </div>

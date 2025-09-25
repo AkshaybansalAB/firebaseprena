@@ -1,11 +1,9 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export function Intro() {
   return (
     <section id="about" className="w-full py-12 mt-0">
-
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16 items-center">
           {/* Text Content */}
@@ -34,14 +32,13 @@ export function Intro() {
 
           {/* Image */}
           <div className="flex justify-center">
-           <div className="relative w-[400px] md:w-[500px] h-[560px] md:h-[700px] rounded-xl overflow-hidden">
-    <Image
-            src="/Prerna Photos.jpeg"
-      alt="Prerna Bansal"
-      fill
-      className="object-cover"
-    />
-  </div>
+            <div className="w-[400px] md:w-[500px] h-[560px] md:h-[700px] rounded-xl overflow-hidden relative">
+              <img
+                src="/Prerna Photos.jpeg"
+                alt="Prerna Bansal"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
