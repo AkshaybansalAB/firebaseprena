@@ -25,13 +25,13 @@ export function Universities() {
               {allLogos.map((src, index) => (
                 <div
                   key={`forward-${index}`}
-                  className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
-                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
+                  className="flex-shrink-0 w-60 h-40 mx-4 flex items-center justify-center 
+                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-3"
                 >
                   <img
                     src={src}
                     alt={`University logo ${index + 1}`}
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-0"
                   />
                 </div>
               ))}
@@ -43,13 +43,13 @@ export function Universities() {
               {allLogos.map((src, index) => (
                 <div
                   key={`forward-clone-${index}`}
-                  className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
-                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
+                  className="flex-shrink-0 w-60 h-40 mx-4 flex items-center justify-center 
+                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-3"
                 >
                   <img
                     src={src}
                     alt={`University logo ${index + 1}`}
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-0"
                   />
                 </div>
               ))}
@@ -62,13 +62,13 @@ export function Universities() {
               {allLogos.map((src, index) => (
                 <div
                   key={`reverse-${index}`}
-                  className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
-                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
+                  className="flex-shrink-0 w-60 h-40 mx-4 flex items-center justify-center 
+                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-3"
                 >
                   <img
                     src={src}
                     alt={`University logo ${index + 1}`}
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-0"
                   />
                 </div>
               ))}
@@ -80,13 +80,13 @@ export function Universities() {
               {allLogos.map((src, index) => (
                 <div
                   key={`reverse-clone-${index}`}
-                  className="flex-shrink-0 w-80 h-40 mx-4 flex items-center justify-center 
-                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-6"
+                  className="flex-shrink-0 w-60 h-40 mx-4 flex items-center justify-center 
+                             bg-background/80 border border-primary/10 shadow-sm rounded-lg p-3"
                 >
                   <img
                     src={src}
                     alt={`University logo ${index + 1}`}
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-0"
                   />
                 </div>
               ))}

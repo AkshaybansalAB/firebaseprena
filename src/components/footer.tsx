@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import { GraduationCap, Instagram, Youtube, Linkedin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer id="contact" className="w-full bg-primary/5 py-12 md:py-16">
+    <footer id="contact" className="w-full bg-primary/5 py-12 md:py-16 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div className="space-y-4">
-            <Link href="#" className="flex items-center gap-2" prefetch={false}>
-              <div className="relative h-16 w-[400px] md:w-[200px]">
+        <div className="flex flex-col lg:flex-row gap-10">
+
+          {/* Left: Logo and socials */}
+          <div className="flex-1 space-y-4">
+            <Link href="#" className="flex items-center" prefetch={false}>
+              <div className="relative h-[80px] sm:h-[100px] w-[200px] sm:w-[200px] md:w-[200px] lg:w-[400px] lg:-ml-20 overflow-visible">
                 <img
                   src="/logos FINAL-05.png"
                   alt="Prerna Bansal & Co Logo"
@@ -19,7 +19,7 @@ export function Footer() {
               </div>
             </Link>
 
-            <p className="max-w-md text-foreground/80">
+            <p className="max-w-full sm:max-w-md text-foreground/80">
               Your trusted partner in navigating the path to higher education. Let's build your future, together.
             </p>
 
@@ -39,18 +39,49 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="font-headline text-xl font-bold text-primary">Get Started Today</h3>
+          {/* Right: Quick Links */}
+          <div className="flex-1 space-y-4">
+            <h3 className="font-headline text-xl font-bold text-primary">Explore</h3>
             <p className="text-foreground/80">
-              Ready to take the next step? Send us a message to schedule your initial consultation.
+              Navigate quickly to important sections of our site or learn more about what we offer.
             </p>
-            <form className="flex space-x-2">
-              <Input type="email" placeholder="Enter your email" className="max-w-lg flex-1 bg-background" />
-              <Button type="submit" className="bg-primary hover:bg-primary/90">
-                Send
-              </Button>
-            </form>
+            <ul className="space-y-2">
+  <li>
+    <Link
+      href="#services"
+      className="text-foreground/80 hover:text-primary hover:underline font-medium cursor-pointer transition"
+    >
+      Our Services
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="#universities"
+      className="text-foreground/80 hover:text-primary hover:underline font-medium cursor-pointer transition"
+    >
+      Where Students Go
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="#about"
+      className="text-foreground/80 hover:text-primary hover:underline font-medium cursor-pointer transition"
+    >
+      About Us
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="#contact"
+      className="text-foreground/80 hover:text-primary hover:underline font-medium cursor-pointer transition"
+    >
+      Contact Us
+    </Link>
+  </li>
+</ul>
+
           </div>
+
         </div>
 
         <div className="mt-8 border-t border-primary/20 pt-8 text-center text-sm text-foreground/60">
