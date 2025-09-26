@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
     ],
   },
   // This line makes Next.js export static files
-  // output: 'export',
+  output: 'export',
 };
 
 export default nextConfig;

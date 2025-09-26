@@ -75,7 +75,7 @@ export function Services() {
     >
       <CardHeader className="flex flex-col items-center text-center gap-4">
         {/* Top circle image */}
-        <div className="w-20 h-20 rounded-full overflow-hidden relative">
+        <div className="w-20 h-20  overflow-hidden relative">
           <img
             src={service.image}
             alt={service.title}
